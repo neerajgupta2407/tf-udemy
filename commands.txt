@@ -1,0 +1,12 @@
+terraform init
+terraform plan
+terraform apply
+
+## auto approve
+
+terraform apply -auto-approve
+# Passing variable file.
+terraform  plan -var-file=prod.tfvars
+
+# Import resource
+terraform import aws_vpc.myVpc vpc-09fffe2c606c8b004 
